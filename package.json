@@ -1,9 +1,31 @@
 {
-  "name": "react-reusable-components",
+  "name": "react-reusable-components-pg",
+  "description": "Demo for React Reusable Components",
   "version": "0.1.0",
-  "private": true,
+  "main": "./lib/indes.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Cristian V. Nica",
+    "email": "cristian.nica@live.com",
+    "url": "https://cristians.website/"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "demo",
+    "learning",
+    "reusable",
+    "react",
+    "components"
+  ],
+  "private": false,
   "dependencies": {
-    "@babel/core": "7.8.4",
+    "@babel/cli": "7.1.0",
+    "@babel/core": "7.1.0",
+    "@babel/preset-env": "7.1.0",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -75,8 +97,13 @@
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
+    "prebuild:lib": "rimraf lib",
+    "build:lib": "npm run build:commonjs && npm run build:css",
     "predeploy:docs": "npm run build:docs",
-    "deploy:docs": "gh-pages -d build"
+    "deploy:docs": "gh-pages -d build",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "prepublish": "npm run build:lib"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -145,15 +172,31 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      [
+        "@babel/preset-env",
+        {
+          "modules": "commonjs"
+        }
+      ],
+      [
+        "react-app",
+        {
+          "helpers": false,
+          "absoluteRuntime": false
+        }
+      ]
     ]
   },
   "devDependencies": {
+    "babel-cli": "6.24.1",
+    "cpx": "1.5.0",
+    "cross-env": "4.0.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.2",
     "gh-pages": "2.2.0",
     "npm-run-all": "4.1.5",
     "react-addons-test-utils": "15.6.2",
-    "react-test-renderer": "16.12.0"
+    "react-test-renderer": "16.12.0",
+    "rimraf": "2.6.1"
   }
 }
