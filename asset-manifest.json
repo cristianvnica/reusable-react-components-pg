@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.01444971.chunk.css",
-    "main.js": "/static/js/main.31e2450e.chunk.js",
-    "main.js.map": "/static/js/main.31e2450e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.49d32fc0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.49d32fc0.js.map",
-    "static/css/2.52738377.chunk.css": "/static/css/2.52738377.chunk.css",
-    "static/js/2.75793030.chunk.js": "/static/js/2.75793030.chunk.js",
-    "static/js/2.75793030.chunk.js.map": "/static/js/2.75793030.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.70d56105932e20c56d8bc18655014fc3.js": "/precache-manifest.70d56105932e20c56d8bc18655014fc3.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.52738377.chunk.css.map": "/static/css/2.52738377.chunk.css.map",
-    "static/css/main.01444971.chunk.css.map": "/static/css/main.01444971.chunk.css.map",
-    "static/js/2.75793030.chunk.js.LICENSE.txt": "/static/js/2.75793030.chunk.js.LICENSE.txt"
+    "main.css": "/reusable-react-components-pg/static/css/main.01444971.chunk.css",
+    "main.js": "/reusable-react-components-pg/static/js/main.56c6a68e.chunk.js",
+    "main.js.map": "/reusable-react-components-pg/static/js/main.56c6a68e.chunk.js.map",
+    "runtime-main.js": "/reusable-react-components-pg/static/js/runtime-main.b850546f.js",
+    "runtime-main.js.map": "/reusable-react-components-pg/static/js/runtime-main.b850546f.js.map",
+    "static/css/2.52738377.chunk.css": "/reusable-react-components-pg/static/css/2.52738377.chunk.css",
+    "static/js/2.75793030.chunk.js": "/reusable-react-components-pg/static/js/2.75793030.chunk.js",
+    "static/js/2.75793030.chunk.js.map": "/reusable-react-components-pg/static/js/2.75793030.chunk.js.map",
+    "index.html": "/reusable-react-components-pg/index.html",
+    "precache-manifest.e979733504d695b2611b2ba1914b640b.js": "/reusable-react-components-pg/precache-manifest.e979733504d695b2611b2ba1914b640b.js",
+    "service-worker.js": "/reusable-react-components-pg/service-worker.js",
+    "static/css/2.52738377.chunk.css.map": "/reusable-react-components-pg/static/css/2.52738377.chunk.css.map",
+    "static/css/main.01444971.chunk.css.map": "/reusable-react-components-pg/static/css/main.01444971.chunk.css.map",
+    "static/js/2.75793030.chunk.js.LICENSE.txt": "/reusable-react-components-pg/static/js/2.75793030.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.49d32fc0.js",
+    "static/js/runtime-main.b850546f.js",
     "static/css/2.52738377.chunk.css",
     "static/js/2.75793030.chunk.js",
     "static/css/main.01444971.chunk.css",
-    "static/js/main.31e2450e.chunk.js"
+    "static/js/main.56c6a68e.chunk.js"
   ]
 }
